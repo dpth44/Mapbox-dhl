@@ -48,7 +48,7 @@ function displayLocationReturnInTable(response) {
             document.querySelector("#data-information").innerHTML = '<div class="information-header">Informations sur le point sélectionné</div>'+ propertiesHTML;
         });
         newTableLine.querySelector(".location").innerHTML = element.properties.label;
-        newTableLine.querySelector(".coordinates").innerHTML = '<b>Lat</b> : ' + element.geometry.coordinates[0] + ' <br> <b>Lon</b> : ' + element.geometry.coordinates[1];
+        newTableLine.querySelector(".coordinates").innerHTML = '<b>Lat</b> : ' + element.geometry.coordinates[1] + ' <br> <b>Lon</b> : ' + element.geometry.coordinates[0];
         newTableLine.querySelector(".score").innerHTML = (element.properties.score*10).toFixed(4)+'/10';
         tableResults.appendChild(newTableLine);
         
@@ -82,7 +82,7 @@ function launchTemplateCreation() {
     });
 }
 function bindEvents() {
-    document.forms["location-form"].addEventListener("submit", onlocationformsubmit)
+    document.forms["location-form"].addEventListener("submit", onlocationformsubmit);
 }
 window.addEventListener("DOMContentLoaded", () => {
     bindEvents();
