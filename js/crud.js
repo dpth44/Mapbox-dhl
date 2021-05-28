@@ -25,5 +25,4 @@ function xhr(url,callback,method,body,async) {
     xhr.open(method, url, async);
     xhr.setRequestHeader("Content-Type","application/json");
     xhr.send(JSON.stringify(body));
-    !async?callback(xhr.response):null;
 }

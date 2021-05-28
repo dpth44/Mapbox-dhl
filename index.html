@@ -18,13 +18,14 @@
   <div id="global-content">
     <form id="location-form">
       <div class="form-group aligned">
-        <input type="text" class="form-control" id="locationInput" name="locationInput" placeholder="Adresse" value="7 rue du champs">
+        <input type="text" class="form-control" id="locationInput" name="locationInput" placeholder="Adresse"
+          value="7 rue du champs">
       </div>
       <button type="submit" class="btn btn-default aligned">Submit</button>
     </form>
     <div id="mapping-content">
-      <div id="map"></div>
-      <div id="map-data-content">
+      <div id="map" class="map-start"></div>
+      <div id="map-data-content" >
         <table id="data-results">
           <thead>
             <tr>
@@ -36,6 +37,7 @@
           </thead>
         </table>
         <tbody id="data-results-body"></tbody>
+        <div id="data-information"></div>
       </div>
     </div>
 

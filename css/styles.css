@@ -9,16 +9,31 @@
 #mapping-content{
     display: flex;
 }
-#map{
+.map-start{
     height: 600px;
-    width: 60%;
+    width: 98%;
     margin-left: 30px;
+    margin-right: 30px;
+}
+.map-aftersubmit{
+    height: 600px;
+    width: 68%;
+    margin-left: 30px;
+
 }
 #map-data-content{
     height: 600px;
     width: 38%;
     margin-right: 30px;
     margin-left: 5px;
+    display: none;
+}
+#map-data-content{
+    height: 600px;
+    width: 38%;
+    margin-right: 30px;
+    margin-left: 5px;
+    display: none;
 }
 table > thead > tr, 
 table > thead > tr > th {
@@ -42,3 +57,28 @@ td {
     padding:5px;
     font-size: 12px;
 }
+.information-header{
+    margin-top:10px;
+    margin-bottom:10px;
+    font-weight: bold;
+}
+.glyph-marker{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    background-image: url('/img/geo-alt-fill.svg');
+    background-repeat:no-repeat;
+    background-position:center;
+    outline: none;
+    border-color: transparent;
+    border-radius: 3px;
+    background-size:40px;
+    color:blue;
+}
+.glyph-hover:hover{
+    background-color: transparent;
+    outline: none;
+    border-color: transparent;
+    border-radius: 3px;
+}
+
