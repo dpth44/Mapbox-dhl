@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map - Project</title>
+  <link rel="stylesheet" media="screen" href="vendor/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="vendor/jquery/jquery.js"></script>
+
+</head>
+
+<body>
+  <div id="global-content">
+    <form id="location-form">
+      <div class="form-group aligned">
+        <input type="text" class="form-control" id="locationInput" name="locationInput" placeholder="Adresse" value="7 rue du champs">
+      </div>
+      <button type="submit" class="btn btn-default aligned">Submit</button>
+    </form>
+    <div id="mapping-content">
+      <div id="map"></div>
+      <div id="map-data-content">
+        <table id="data-results">
+          <thead>
+            <tr>
+              <th scope="col">Localiser</th>
+              <th scope="col">Adresse</th>
+              <th scope="col">Cordonnées</th>
+              <th scope="col">Pertinence</th>
+            </tr>
+          </thead>
+        </table>
+        <tbody id="data-results-body"></tbody>
+      </div>
+    </div>
+
+  </div>
+  <script type="text/javascript" src="/js/crud.js"></script>
+  <script type="text/javascript" src="/js/index.js"></script>
+</body>
+
+</html>

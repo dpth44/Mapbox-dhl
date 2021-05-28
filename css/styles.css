@@ -1,0 +1,44 @@
+.aligned{
+    display: inline-block;
+}
+#location-form{
+    text-align: center;
+    height: 50px;
+    margin-top: 30px;
+}
+#mapping-content{
+    display: flex;
+}
+#map{
+    height: 600px;
+    width: 60%;
+    margin-left: 30px;
+}
+#map-data-content{
+    height: 600px;
+    width: 38%;
+    margin-right: 30px;
+    margin-left: 5px;
+}
+table > thead > tr, 
+table > thead > tr > th {
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+}
+td,
+th {
+    border: 1px solid rgb(190, 190, 190);
+    height: 30px;
+    padding:5px
+}
+
+td {
+    text-align: center;
+    padding:5px;
+    font-size: 12px;
+}
